@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    height: 4120px;
+    background-attachment: scroll;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: block;
+    background-color: #1E374E;
+    color: black;
+    margin: auto;
+    width: 1367px;
+    height: 147px;
+    z-index: -5;
+}
+.logo {
+    display: block;
+    height: 126.65px;
+    width: 444.59px;
+}
+.Start {
+    font-weight: bold;
+}
