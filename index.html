@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang-"en">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Landing Page</title>
@@ -8,13 +8,51 @@
     </head>
     <body>
         <header>
-            <a href="">
-            <img src="Assets/PathLogo.png" class="logo">
+            <a href="index.html">
+                <img src="Assets/PathLogo.png" class="logo">
             </a>
+    
+            <div class="dropdown-wrapper">
+                <button class="btn-dasbor-custom" onclick="toggleMenu()">
+                Dasbor <img src="Assets/Arrow.png" class="arrow" id="arrowIcon">
+                </button>
+                    
+                <a href="login.html" class="dropdown-menu" id="loginMenu">Masuk
+                </a>
+            </div>
         </header>
 
         <div>
             <p class="Start">Temukan Arah <span>Hidup</span> Terbaikmu.</p>
+            
+            <a href="" class="Mulaiskarang">
+                <button class="Test">Mulai Sekarang</button>
+            </a>
+            <img src="Assets/topigmbr.png" class="topi">
+            <img src="Assets/Eclipse.png" class="shadow">
         </div>
+
+        <div>
+            <p class="about">Tentang <span>Pathway</span></p>
+        </div>
+
+        <footer>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+            const menu = document.getElementById('loginMenu');
+            const arrow = document.getElementById('arrowIcon');
+        
+            // Toggle muncul/hilang
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            } else {
+                menu.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            }
+        }
+        </script>
     </body>
 </html>
