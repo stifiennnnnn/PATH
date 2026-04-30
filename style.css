@@ -1,12 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E374E;
+    width: 100%;
+    height: 147px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    display: inline-block;
 }
 
 .container {
@@ -22,11 +39,6 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
-}
-
-.logo h2 {
-  color: #7fffd4;
-  margin-bottom: 20px;
 }
 
 .left h1 {
@@ -56,6 +68,10 @@ input {
 .phone {
   display: flex;
   align-items: center;
+}
+
+.inp {
+  font-size: 15px;
 }
 
 .phone span {
@@ -106,4 +122,28 @@ button:hover {
 .right {
   width: 60%;
   background-color: #e5e5e5;
+}
+
+.Pasti {
+  font-size: 80px;
+  position: absolute;
+  text-align: left;
+  margin-top: -520px;
+  margin-left: 900px;
+  font-weight: bold;
+  width: 300px;
+}
+
+.blu {
+  color: #1e45cc;
+}
+
+.subm {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.subm:hover {
+  color: rgb(124, 124, 124);
 }
