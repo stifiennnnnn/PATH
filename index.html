@@ -33,7 +33,25 @@
         </div>
 
         <div>
-            <p class="about">Tentang <span>Pathway</span></p>
+            <p class="about">#TemukanArah<span>MasaDepanmu</span></p>
+            <div class="containerop1">
+                <div>
+                    <p class="Op1">Angkat Potensi</p>
+                    <p class="isi">Kenali minat dan bakatmu melalui tes yang mudah dan personal.</p>
+                </div>
+            </div>
+            <div class="containerop2">
+                <div>
+                    <p class="Op2">Pilih Arah</p>
+                    <p class="isi">Dapatkan rekomendasi jurusan serta sekolah atau universitas yang sesuai dengan dirimu.</p>
+                </div>
+            </div>
+            <div class="containerop3">
+                <div>
+                    <p class="Op3">Rencanakan Masa Depan</p>
+                    <p class="isi">Jelajahi peluang karier dan siapkan langkah terbaik untuk masa depanmu.</p>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -41,18 +59,24 @@
 
         <script>
             function toggleMenu() {
-            const menu = document.getElementById('loginMenu');
-            const arrow = document.getElementById('arrowIcon');
-        
-            // Toggle muncul/hilang
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-                arrow.style.transform = 'rotate(0deg)';
-            } else {
-                menu.style.display = 'block';
-                arrow.style.transform = 'rotate(180deg)';
-            }
-        }
+    const menu = document.getElementById('loginMenu');
+    const arrow = document.getElementById('arrowIcon');
+    const wrapper = document.querySelector('.dropdown-wrapper');
+
+    // Toggle class 'show' untuk menu (fade in)
+    menu.classList.toggle('show');
+    
+    // Toggle class 'open' untuk wrapper (buat border-radius tombol & rotasi panah)
+    wrapper.classList.toggle('open');
+
+    // Logic rotasi panah (opsional kalau mau tetep lewat JS, 
+    // tapi di CSS kamu tadi udah ada .dropdown-wrapper.open .arrow)
+    if (menu.classList.contains('show')) {
+        arrow.style.transform = 'rotate(180deg)';
+    } else {
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
         </script>
     </body>
 </html>
