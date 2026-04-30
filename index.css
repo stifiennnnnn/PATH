@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-height: 4120px;
+    min-height: 3000px;
     background-color: #f5f5f5;
 }
 
@@ -200,7 +200,7 @@ header a {
 
 footer {
     display: block;
-    margin-top: 3350px;
+    margin-top: 300px;
     align-items: center;
     justify-content: space-between;
     background-color: #1E374E;
@@ -311,10 +311,39 @@ footer {
 }
 
 .Uni1 {
-    width: 502px;
-    height: 289px;
+    margin-top: 160px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+}
+
+.Uni2 {
+    position: absolute;
+    margin-left: auto;
+    right: 15px;
+}
+
+.Uni3 {
+    position: absolute;
+    left: 15px;
+}
+
+.Uni4 {
+    display: block;
+    position: absolute;
+    margin-left: 235px;
+}
+
+.Uni5 {
+    margin-left: auto;
+    margin-right: 235px;
+}
+
+.Uni1, .Uni2, .Uni3, .Uni4, .Uni5 {
+    justify-content: center;
+    margin-top: 160px;
+    width: 426px;
+    height: 289px;
 }
 
 .judul1 {
@@ -326,4 +355,170 @@ footer {
     text-align: right;
     font-weight: bold;
     font-size: 27.43px;
+    padding: 20px 20px 240px 0px;
+}
+
+.judul2 {
+    display: block;
+    border: none;
+    background-color: #1D3584;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27.43px;
+    padding: 20px 20px 240px 0px;
+    margin-top: -450px;
+}
+
+.judul3 {
+    display: block;
+    border: none;
+    background-color: #1D3584;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27.43px;
+    padding: 20px 20px 240px 0px;
+    margin-top: -450px;
+}
+
+.judul4 {
+    display: block;
+    border: none;
+    background-color: #1D3584;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27.43px;
+    padding: 20px 20px 240px 0px;
+    margin-top: -140px;
+}
+
+.judul5 {
+    display: block;
+    border: none;
+    background-color: #1D3584;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27.43px;
+    padding: 20px 20px 240px 0px;
+    margin-top: -140px;
+}
+
+.Binus {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    z-index: 3;
+}
+
+.UI {
+    margin-left: 10px;
+    margin-top: -200px;
+    display: block;
+    z-index: 10;
+    position: absolute;
+}
+
+.TM {
+    display: block;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 15px;
+    z-index: 14;
+}
+
+.ITB {
+    display: block;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 15px;
+    z-index: 14;
+}
+
+.GJMD {
+    display: block;
+    margin-top: -140px;
+    margin-left: 15px;
+}
+
+.deks1, .deks2, .deks3, .deks4, .deks5 {
+    display: block;
+    position: relative;
+    margin-left: 210px;
+    color: white;
+    font-size: 16.71px;
+    margin-top: -220px;
+    text-align: right;
+    width: 190px;
+    z-index: 10;
+    line-height: 25px;
+}
+
+.PthLg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    margin-top: 300px;
+}
+
+.contact {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    width: 500px;
+    line-height: 50px;
+}
+
+.InstaLogo {
+    margin-top: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.TubeLogo {
+    margin-top: -93px;
+    display: block;
+    margin-left: 500px;
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.TikTokLogo {
+    margin-top: -93px;
+    display: block;
+    margin-right: 540px;
+    margin-left: auto;
+}
+
+.NomorTLP {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+footer p {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0px;
 }
