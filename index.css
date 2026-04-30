@@ -167,6 +167,7 @@ header a {
     margin-left: 700px;
     margin-top: -560px;
     z-index: -4;
+    right: 5%;
 }
 
 .shadow {
@@ -175,6 +176,7 @@ header a {
     margin-left: 920px;
     margin-top: -300px;
     z-index: -5;
+    right: 4%;
 }
 
 .Mulaiskarang {
@@ -187,6 +189,9 @@ header a {
     font-size: 76.86px;
     text-align: center;
     margin-top: 200px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about span{
@@ -292,4 +297,33 @@ footer {
     width: 408px;
     height: 420px;
     text-align: center;
+}
+
+.deksripsi {
+    margin-top: 60px;
+    color: #1E374E;
+    text-align: center;
+    font-size: 36px;
+    width: 1000px;
+    line-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Uni1 {
+    width: 502px;
+    height: 289px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judul1 {
+    display: block;
+    border: none;
+    background-color: #1D3584;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 27.43px;
 }
