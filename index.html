@@ -5,6 +5,7 @@
         <title>Landing Page</title>
         <link href="index.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" type="image/png" href="Assets/favicon.png">
     </head>
     <body>
         <header>
@@ -28,7 +29,7 @@
             <a href="" class="Mulaiskarang">
                 <button class="Test">Mulai Sekarang</button>
             </a>
-            <img src="Assets/topigmbr.png" class="topi">
+            <img src="Assets/Topi.gif" class="topi">
             <img src="Assets/Eclipse.png" class="shadow">
         </div>
 
@@ -54,6 +55,19 @@
             </div>
         </div>
 
+        <div>
+            <p class="about">Kenapa <span>Pathway?</span></p>
+            <p class="deksripsi">Pathway layak dipilih karena memberikan solusi sederhana dan terarah bagi pelajar yang masih bingung menentukan masa depan. Melalui tes minat dan bakat, pengguna dapat mengenali potensi diri dan mendapatkan rekomendasi jurusan serta sekolah atau universitas yang sesuai. Selain itu, Pathway juga menyediakan informasi karier yang relevan, sehingga membantu pengguna memahami hubungan antara pendidikan dan dunia kerja.</p>
+        </div>
+
+        <div>
+            <p class="about">Universitas Rekomendasi <span>Pathway</span></p>
+            <div class= "Uni1">
+                <p class="judul1">BINUS University</p>
+                <p class="deks1"></p>
+            </div>
+        </div>
+
         <footer>
         </footer>
 
@@ -62,15 +76,8 @@
     const menu = document.getElementById('loginMenu');
     const arrow = document.getElementById('arrowIcon');
     const wrapper = document.querySelector('.dropdown-wrapper');
-
-    // Toggle class 'show' untuk menu (fade in)
     menu.classList.toggle('show');
-    
-    // Toggle class 'open' untuk wrapper (buat border-radius tombol & rotasi panah)
     wrapper.classList.toggle('open');
-
-    // Logic rotasi panah (opsional kalau mau tetep lewat JS, 
-    // tapi di CSS kamu tadi udah ada .dropdown-wrapper.open .arrow)
     if (menu.classList.contains('show')) {
         arrow.style.transform = 'rotate(180deg)';
     } else {
