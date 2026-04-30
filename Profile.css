@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-height: 2100px; /* Sesuai request awal lo */
+    min-height: 200px; /* Sesuai request awal lo */
     background-color: #f5f5f5;
 }
 
@@ -139,22 +139,114 @@ header {
 }
 
 .Rec {
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+    left: 60px;
     width: 92%;
     margin-top: 30px;
+    position: absolute;
+    z-index: -1;
+}
+
+.halo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 64px;
+    position: absolute;
+    display: block;
+    margin-top: 100px;
+    z-index: 10;
+    text-align: center;
+    margin-left: 250px;
+    
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    position: absolute;
+    display: block;
+    margin-top: 200px;
+    z-index: 10;
+    text-align: center;
+    margin-left: 650px;
+}
+
+.pfp {
+    display: block;
+    position: absolute;
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 170px;
+}
+
+.Id {
+    font-size: 24px;
+    display: block;
+    position: absolute;
+    color: white;
+    line-height: 40px;
+    margin-left: 655px;
+    margin-top: 300px;
+}
+
+.Static {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    font-size: 71px;
+    text-align: center;
+    margin-left: 550px;
+    margin-top: 800px;
+}
+
+.Tests {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.ingfo {
+    font-size: 24px;
+    margin-left: 200px;
+    text-align: left;
+    color: white;
+    line-height: 30px;
+}
+
+.merah {
+    color: red;
+}
+
+.final {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.reason {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+    color: red;
 }
 
 footer {
     display: block;
-    margin-top: 100px;
+    margin-top: 180px;
     align-items: center;
     justify-content: space-between;
     background-color: #1E374E;
     width: 100%;
     height: 147px;
     padding: 0 40px;
+    position: absolute;
 }
 
 footer p {
