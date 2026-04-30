@@ -69,3 +69,35 @@ document.addEventListener('DOMContentLoaded', () => {
         inputPw.addEventListener('input', () => inputPw.style.border = "");
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const phoneInput = document.getElementById('Numb');
+
+    if (phoneInput) {
+        // Saat user klik atau fokus, pastiin kursor gak di belakang +62
+        phoneInput.addEventListener('focus', function() {
+            if (this.value === "") {
+                this.value = "+62 ";
+            }
+        });
+
+        phoneInput.addEventListener('input', function() {
+            // Kalau user coba hapus +62, kita paksa balik lagi
+            if (!this.value.startsWith('+62 ')) {
+                this.value = '+62 ';
+            }
+
+            // Hanya izinkan angka setelah +62
+            const prefix = '+62 ';
+            const currentNum = this.value.substring(prefix.length);
+            this.value = prefix + currentNum.replace(/[^0-9]/g, '');
+        });
+
+        // Biar user gak sengaja hapus pake backspace di awal
+        phoneInput.addEventListener('keydown', function(e) {
+            if (this.selectionStart < 4 && (e.key === 'Backspace' || e.key === 'Delete')) {
+                e.preventDefault();
+            }
+        });
+    }
+});
