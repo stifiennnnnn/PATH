@@ -101,3 +101,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Ambil semua tombol opsi
+    const allOptions = document.querySelectorAll('.option-btn');
+
+    allOptions.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 1. Cari tombol lain yang udah warna ijo di grid yang sama, terus hapus ijonya
+            const parent = this.parentElement;
+            parent.querySelectorAll('.option-btn').forEach(otherBtn => {
+                otherBtn.classList.remove('selected');
+            });
+
+            // 2. Tambahin warna ijo ke tombol yang baru aja diklik
+            this.classList.add('selected');
+            
+            // Log buat ngecek di console
+            console.log("Kamu milih jawaban:", this.innerText);
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const allOptions = document.querySelectorAll('.option-btn');
+
+    allOptions.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Cari pembungkus terdekat (options-grid milik soal ini saja)
+            const currentGrid = this.closest('.options-grid');
+            
+            // Hapus class selected cuma di grid yang sama
+            currentGrid.querySelectorAll('.option-btn').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+
+            // Tambah ijo ke yang diklik
+            this.classList.add('selected');
+        });
+    });
+});
