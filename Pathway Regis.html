@@ -4,45 +4,50 @@
   <meta charset="UTF-8">
   <title>Pathway - Daftar</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
+  <header>
+            <a href="index.html">
+                <img src="Assets/PathLogo.png" class="logo">
+            </a>
+            </div>
+        </header>
 
 <div class="container">
   
   <!-- LEFT SIDE -->
   <div class="left">
-    <div class="logo">
-      <h2>Pathway</h2>
-    </div>
 
     <h1>Daftar</h1>
 
     <form>
-      <label>Nama Lengkap</label>
-      <input type="text">
+      <label for="usn" class="inp">Nama Pengguna</label><br>
+      <input type="text" id="usn" name="usn" required>
 
-      <label>Email</label>
-      <input type="email">
+      <label for="Em" class="inp">Email</label><br>
+      <input type="email" id="Em" name="Em" required>
 
-      <label>Kata Sandi</label>
-      <input type="password">
+      <label for="Pass" class="inp">Kata Sandi</label><br>
+      <input type="password" id="Pass" name="Pass" required>
 
-      <label>Nomor Telepon</label>
-      <div class="phone">
-        <span>+62</span>
-        <input type="text">
-      </div>
+      <label for="Numb" class="inp">Nomor Telepon</label><br>
+      <input type="text" id="Numb" name="Numb" value="+62 " required>
 
-      <label>Alamat Lengkap</label>
-      <input type="text">
+      <label class="inp" for="Add">Alamat Lengkap</label><br>
+      <input type="text" id="Add" name="Add" required>
 
-      <label>Jenis Kelamin</label>
+      <label class="inp">Jenis Kelamin</label>
       <div class="gender">
         <input type="radio" name="jk"> Pria
         <input type="radio" name="jk"> Wanita
       </div>
 
-      <button type="submit">Daftar</button>
+      <button type="submit">
+      <a class="subm" href="Profile.html">
+      Daftar
+      </button>
+      </a>
     </form>
 
     <p class="footer">2026 © Larp Monster</p>
@@ -53,5 +58,8 @@
 
 </div>
 
+<p class="Pasti">Pasti bisa bersama <span class="blu">Pathway.</span></p>
+
+<script src="JAVA.js"></script>
 </body>
 </html>
