@@ -20,16 +20,27 @@
             <section class="isi">
                 <form>
                 <p>Masuk</p>
-                <label for="usn">Nama Pengguna</label><br>
-                <input type="text" id="usn" name="usn" required><br>
-                <label for="pw">Kata Sandi</label><br>
-                <input type="password" id="pw" name="pw" required><br>
-                <a href="dasbor.html" style="text-decoration: none;"><button type="submit">Masuk</button></a>
-                <p class="regtex">Atau buat akun terlebih dahulu:</p>
-                <a href="regis.html" style="text-decoration: none;"><button class="regi" type="button">Daftar</button></a>
-                <p class="copy">&copy;2026 Larp Monster</p>
+                    <label for="usn">Nama Pengguna</label><br>
+                    <!-- Tambahin id="usn" di sini -->
+                    <input type="text" id="usn" name="usn" required><br>
+                    
+                    <label for="pw">Kata Sandi</label><br>
+                    <input type="password" id="pw" name="pw" required><br>
+                    
+                    <!-- Link tetap ada, tapi kita kasih id pada tombolnya -->
+                    <a href="Profile.html" style="text-decoration: none;">
+                        <button type="button" id="btnMasuk">Masuk</button>
+                    </a>
+
+                    <p class="regtex">Atau buat akun terlebih dahulu:</p>
+                    <a href="Pathway Regis.html" style="text-decoration: none;">
+                        <button class="regi" type="button">Daftar</button>
+                    </a>
+                    <p class="copy">&copy;2026 Larp Monster</p>
                 </form>
             </section>
         </main>
+
+        <script src="JAVA.js"></script>
     </body>
     </html>
