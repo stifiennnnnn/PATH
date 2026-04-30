@@ -142,8 +142,17 @@ form button {
     color: white;
     font-size: 30px;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+
+form button:hover {
+    background-color: #192b66;
+    color: gray;
+}
+
 .regi {
     margin-top: -150px;
     margin-bottom: 100pxpx;
+    cursor: pointer;
 }
