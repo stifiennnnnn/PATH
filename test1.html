@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pathway Quiz</title>
+  <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Assets/PathLogo.png" class="logo">
+            </a>
+
+        <div class="dropdown-wrapper">
+                <button class="btn-dasbor-custom" onclick="toggleMenu()">
+                    Dasbor <img src="Assets/Arrow.png" class="arrow" id="arrowIcon">
+                </button>
+    
+                <!-- Menu Dropdown dengan 3 opsi -->
+                <ul class="dropdown-menu" id="loginMenu">
+                    <li><a href="tes.html">Tes</a></li>
+                    <li><a href="Profile.html">Edit Profil</a></li>
+                    <li><a href="logout.html" class="logout-item">Keluar</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <div class="quiz-container">
+    <!-- Soal -->
+     <div class="soal-header">
+        <h3>Soal 1</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya tertarik mempelajari teknologi dan cara kerjanya.</p>
+    </div>
+
+    <!-- Pilihan Jawaban (Grid A-B, C-D) -->
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+
+    <div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 2</h3>
+    </div>
+
+    <div class="question-box">
+        <p class="question-text">Saya menyukai pelajaran matematika.</p>
+    </div>
+
+    <!-- Pilihan Jawaban Skala Likert (A-E) -->
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+    <!-- Container Soal 3 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 3</h3>
+    </div>
+
+    <div class="question-box">
+        <p class="question-text">Saya tertarik melakukan eksperimen atau penelitian.</p>
+    </div>
+
+    <!-- Pilihan Jawaban (Skala Likert A-E) -->
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+    <div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 4</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya ingin bekerja di bidang teknik atau teknologi.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+    <!-- SOAL NO 5 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 5</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya suka memecahkan masalah logika.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- SOAL NO 6 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 6</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya tertarik dengan dunia coding atau IT.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- SOAL NO 7 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 7</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya suka mencari tahu bagaimana sesuatu dibuat.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- SOAL NO 8 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 8</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya tertarik dengan perkembangan AI dan teknologi masa depan.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- SOAL NO 9 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 9</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya nyaman bekerja dengan angka atau data.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- SOAL NO 10 -->
+<div class="quiz-container">
+    <div class="soal-header">
+        <h3>Soal 10</h3>
+    </div>
+    <div class="question-box">
+        <p class="question-text">Saya ingin menciptakan inovasi baru.</p>
+    </div>
+    <div class="options-grid">
+        <button class="option-btn"><span>A.</span> Sangat Tidak Sesuai</button>
+        <button class="option-btn"><span>B.</span> Tidak Sesuai</button>
+        <button class="option-btn"><span>C.</span> Cukup Sesuai</button>
+        <button class="option-btn"><span>D.</span> Sesuai</button>
+        <button class="option-btn"><span>E.</span> Sangat Sesuai</button>
+    </div>
+</div>
+
+<!-- TOMBOL SELESAI -->
+<div class="nav-container" style="margin-bottom: 100px;">
+    <a class="finish" href="Profile.html">
+    <button class="btn-nav primary" style="width: 100%; font-size: 20px;">
+        Selesai
+    </button>
+    </a>
+</div>
+
+    <script src="JAVA.js"></script>
+</body>
+</html>
