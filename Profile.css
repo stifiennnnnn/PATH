@@ -1,0 +1,169 @@
+/* --- Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 2100px; /* Sesuai request awal lo */
+    background-color: #f5f5f5;
+}
+
+/* --- Header Layout --- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E374E;
+    width: 100%;
+    height: 147px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: block;
+    height: 100px; /* Dikecilkan dikit biar proporsional di header 147px */
+    width: auto;
+    object-fit: contain;
+}
+
+/* --- Dropdown Container --- */
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 260px; /* Lebar ditambah dikit buat nampung teks */
+}
+
+/* --- Button Dasbor --- */
+.btn-dasbor-custom {
+    background-color: #EBE6E6;
+    color: black;
+    padding: 13px 35px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    gap: 15px;
+    position: relative;
+    z-index: 10; /* Biar selalu di atas menu */
+    transition: all 0.3s ease;
+}
+
+.btn-dasbor-custom:hover {
+    color: #1E374E;
+    background-color: #ffffff;
+}
+
+/* Animasi Radius Tombol saat Dropdown Buka */
+.dropdown-wrapper.open .btn-dasbor-custom {
+    border-radius: 30px 30px 0 0;
+}
+
+/* --- Arrow Animation --- */
+.arrow {
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-wrapper.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* --- Dropdown Menu List --- */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #EBE6E6;
+    border-radius: 0 0 30px 30px; /* Melengkung di bawah saja */
+    padding: 10px 0;
+    z-index: 5;
+    
+    /* Logic Hidden Default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Munculkan Menu */
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* --- Menu Items (Links) --- */
+.dropdown-menu li a {
+    display: block;
+    padding: 20px 38px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    transition: background 0.2s ease;
+}
+
+/* Hover effect untuk Tes & Edit Profil */
+.dropdown-menu li a:hover {
+    background-color: #DED9D9;
+    color: #1E374E;
+}
+
+/* --- KHUSUS KELUAR (Warna Merah) --- */
+.dropdown-menu li a.logout-item {
+    color: #D32F2F; /* Merah Bold */
+    border-top: 1px solid #CCC; /* Kasih pemisah dikit */
+}
+
+.dropdown-menu li a.logout-item:hover {
+    background-color: #FFEBEE; /* Background merah sangat muda */
+    color: #B71C1C;
+}
+
+.Rec {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 92%;
+    margin-top: 30px;
+}
+
+footer {
+    display: block;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E374E;
+    width: 100%;
+    height: 147px;
+    padding: 0 40px;
+}
+
+footer p {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0px;
+}
