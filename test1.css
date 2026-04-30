@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 3000px;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E374E;
+    width: 100%;
+    height: 147px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+    height: 126.65px;
+    width: 444.59px;
+    object-fit: contain;
+}
+
+/* Container Utama */
+.quiz-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Kotak Soal */
+.question-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 8px solid #1E374E;
+    border-radius: 10px;
+}
+
+.question-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Grid Pilihan Jawaban (Kunci: 1fr 1fr bikin 2 kolom) */
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+/* Tombol Pilihan */
+.option-btn {
+    background-color: #EBE6E6;
+    color: #1E374E;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-btn span {
+    margin-right: 10px;
+    color: #D32F2F; /* Warna buat huruf A, B, C, D */
+}
+
+/* Hover & Active Effect */
+.option-btn:hover {
+    background-color: #1E374E;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.option-btn:hover span {
+    color: #ffffff;
+}
+
+/* Responsif buat HP (biar jadi 1 kolom kalau layar sempit) */
+@media (max-width: 600px) {
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.option-btn.selected {
+    background-color: #4CAF50 !important; /* Warna Ijo */
+    color: white !important;
+    border-color: #388E3C;
+    transform: scale(1.02); /* Biar ada efek nekan dikit */
+}
+
+/* Pastiin span (huruf A, B, C, D) juga jadi putih pas aktif */
+.option-btn.selected span {
+    color: white !important;
+}
+
+.option-btn:last-child:nth-child(odd) {
+    grid-column: span 2;
+}
+
+.soal-header {
+    margin-bottom: 15px;
+}
+
+.soal-header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #1E374E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #EBE6E6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Biar Opsi E tetep cakep kalau ganjil (2 kolom) */
+.options-grid .option-btn:last-child {
+    grid-column: span 2;
+}
+
+/* Responsif buat HP (Balik jadi 1 kolom) */
+@media (max-width: 600px) {
+    .options-grid .option-btn:last-child {
+        grid-column: span 1;
+    }
+}
+
+/* Buat nengahin tombol navigasi di bawah */
+.nav-container {
+    max-width: 900px;
+    margin: 20px auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-nav {
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: 2px solid #1E374E;
+    background: transparent;
+    color: #1E374E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-nav.primary {
+    background: #1E374E;
+    color: white;
+}
+
+.finish {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-nav:hover {
+    opacity: 0.8;
+}
+
+/* Opsi E biar tetep rapi di grid 5 opsi */
+.options-grid .option-btn:last-child {
+    grid-column: span 2;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 260px; /* Lebar ditambah dikit buat nampung teks */
+}
+
+/* --- Button Dasbor --- */
+.btn-dasbor-custom {
+    background-color: #EBE6E6;
+    color: black;
+    padding: 13px 35px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    gap: 15px;
+    position: relative;
+    z-index: 10; /* Biar selalu di atas menu */
+    transition: all 0.3s ease;
+}
+
+.btn-dasbor-custom:hover {
+    color: #1E374E;
+    background-color: #ffffff;
+}
+
+/* Animasi Radius Tombol saat Dropdown Buka */
+.dropdown-wrapper.open .btn-dasbor-custom {
+    border-radius: 30px 30px 0 0;
+}
+
+/* --- Arrow Animation --- */
+.arrow {
+    width: 20px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-wrapper.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* --- Dropdown Menu List --- */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #EBE6E6;
+    border-radius: 0 0 30px 30px; /* Melengkung di bawah saja */
+    padding: 10px 0;
+    z-index: 5;
+    
+    /* Logic Hidden Default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Munculkan Menu */
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* --- Menu Items (Links) --- */
+.dropdown-menu li a {
+    display: block;
+    padding: 20px 38px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: left;
+    transition: background 0.2s ease;
+}
+
+/* Hover effect untuk Tes & Edit Profil */
+.dropdown-menu li a:hover {
+    background-color: #DED9D9;
+    color: #1E374E;
+}
+
+/* --- KHUSUS KELUAR (Warna Merah) --- */
+.dropdown-menu li a.logout-item {
+    color: #D32F2F; /* Merah Bold */
+    border-top: 1px solid #CCC; /* Kasih pemisah dikit */
+}
+
+.dropdown-menu li a.logout-item:hover {
+    background-color: #FFEBEE; /* Background merah sangat muda */
+    color: #B71C1C;
+}
